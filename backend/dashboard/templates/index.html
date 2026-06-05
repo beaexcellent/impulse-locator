@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Impulse Events</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+    <h1>Impulse Events (Live)</h1>
+    <ul id="events"></ul>
+
+    <script>
+        const socket = io();
+
+        socket.on("event", (data) => {
+            const li = document.createElement("li");
+            li.textContent = JSON.stringify(data);
+            document.getElementById("events").prepend(li);
+        });
+    </script>
+</body>
+</html>

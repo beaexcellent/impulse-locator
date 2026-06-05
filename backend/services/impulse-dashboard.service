@@ -1,0 +1,12 @@
+[Unit]
+Description=Impulse Dashboard
+After=network.target impulse-receiver.service
+
+[Service]
+User=pi
+WorkingDirectory=/srv/impulse/dashboard
+ExecStart=/srv/impulse/venv/bin/python app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
