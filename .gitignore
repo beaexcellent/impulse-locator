@@ -1,0 +1,9 @@
+# Python virtual environments
+venv/
+*/venv/
+
+# Secrets
+*.env
+secrets.json
+config.json
+wifi_credentials.h
