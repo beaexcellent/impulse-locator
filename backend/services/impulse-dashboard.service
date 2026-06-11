@@ -1,10 +1,11 @@
 [Unit]
-Description=Impulse Dashboard
-After=network.target impulse-receiver.service
+Description=Impulse Dashboard (Flask + Socket.IO)
+After=network.target
 
 [Service]
-User=pi
+User=soda1adm1n
 WorkingDirectory=/srv/impulse/dashboard
+Environment="PATH=/srv/impulse/venv/bin"
 ExecStart=/srv/impulse/venv/bin/python app.py
 Restart=always
 
