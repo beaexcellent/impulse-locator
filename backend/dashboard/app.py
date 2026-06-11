@@ -27,4 +27,4 @@ def start_forwarder():
 
 if __name__ == "__main__":
     start_forwarder()
-    socketio.run(app, host="0.0.0.0", port=8000)
+    socketio.run(app, host="0.0.0.0", port=8000, allow_unsafe_werkzeug=True)
