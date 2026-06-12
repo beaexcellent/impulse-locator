@@ -5,8 +5,10 @@ from flask_socketio import SocketIO
 import threading
 import time
 
-# Import the shared event queue from the receiver
-from receiver.udp_listener import event_queue
+from event_queue import event_queue
+
+## Import the shared event queue from the receiver
+#from receiver.udp_listener import event_queue
 
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")

@@ -5,6 +5,11 @@ from datetime import datetime
 from pathlib import Path
 import queue
 
+import sys
+sys.path.append("/srv/impulse")
+
+from event_queue import event_queue
+
 # Shared queue for dashboard (imported by dashboard app)
 event_queue = queue.Queue()
 
