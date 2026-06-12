@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 User=soda1adm1n
-WorkingDirectory=/srv/impulse/dashboard
+WorkingDirectory=/srv/impulse
 Environment="PATH=/srv/impulse/venv/bin"
-ExecStart=/srv/impulse/venv/bin/python app.py
+ExecStart=/srv/impulse/venv/bin/python dashboard/app.py
 Restart=always
 
 [Install]

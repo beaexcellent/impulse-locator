@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=soda1adm1n
 WorkingDirectory=/srv/impulse
-ExecStart=/srv/impulse/venv/bin/python -m receiver.udp_listener
+ExecStart=/srv/impulse/venv/bin/python receiver/udp_listener.py
 Restart=always
 
 [Install]

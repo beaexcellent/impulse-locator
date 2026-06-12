@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 import sys
-sys.path.append("/srv/impulse")
+#sys.path.append("/srv/impulse")
 
 from event_queue import event_queue
 print("Receiver queue object:", id(event_queue))
