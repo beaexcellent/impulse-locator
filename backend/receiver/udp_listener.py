@@ -29,6 +29,7 @@ def start_udp_listener(host="0.0.0.0", port=5000):
         try:
             event = json.loads(data.decode())
             event["received_at"] = time.time()
+            print("Receiver queue object:", id(event_queue))
             log_event(event)
             event_queue.put(event)
             print("[receiver] Event:", event)

@@ -6,7 +6,7 @@ import threading
 import time
 
 from event_queue import event_queue
-
+print("Dashboard queue object initialization:", id(event_queue))
 ## Import the shared event queue from the receiver
 #from receiver.udp_listener import event_queue
 
