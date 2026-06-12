@@ -1,13 +1,13 @@
-import sys, inspect, event_queue
+import sys
+sys.path.insert(0, "/srv/impulse")
+import inspect
+import event_queue
 print("=== DEBUG ===")
 print("sys.path:", sys.path)
 print("event_queue module file:", inspect.getfile(event_queue))
 print("event_queue object id:", id(event_queue.event_queue))
 print("================")
 
-
-import sys
-sys.path.insert(0, "/srv/impulse")
 import socket
 import json
 import time

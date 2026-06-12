@@ -1,4 +1,7 @@
-import sys, inspect, event_queue
+import sys
+sys.path.insert(0, "/srv/impulse")
+import inspect
+import event_queue
 print("=== DEBUG ===")
 print("sys.path:", sys.path)
 print("event_queue module file:", inspect.getfile(event_queue))
