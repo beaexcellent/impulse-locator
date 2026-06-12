@@ -1,10 +1,12 @@
+import sys
+sys.path.insert(0, "/srv/impulse")
 import socket
 import json
 import time
 from datetime import datetime
 from pathlib import Path
 
-import sys
+#import sys
 #sys.path.append("/srv/impulse")
 
 from event_queue import event_queue

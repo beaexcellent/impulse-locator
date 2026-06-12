@@ -1,4 +1,5 @@
 import sys
+sys.path.insert(0, "/srv/impulse")
 #sys.path.append("/srv/impulse")
 from flask import Flask, render_template
 from flask_socketio import SocketIO
