@@ -8,6 +8,7 @@ import sys
 sys.path.append("/srv/impulse")
 
 from event_queue import event_queue
+print("Receiver queue object:", id(event_queue))
 
 LOG_DIR = Path("/srv/impulse/logs")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
